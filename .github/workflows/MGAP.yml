@@ -34,8 +34,8 @@ jobs:
         run: npm run build
 
       - name: Upload build artifact
-        uses: actions/upload-artifact@v2
+        uses: ./.github/actions/upload-artifact
         with:
-           name: build-output
-           path: dist/
+          name: build-output
+          path: dist/
 
