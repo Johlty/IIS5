@@ -1,7 +1,7 @@
 name: Echo Message Pipeline
 
 on:
-  workflow_dispatch:  # Allows you to trigger it manually from the Actions tab
+  workflow_dispatch:  
 
 jobs:
   say-hello:
