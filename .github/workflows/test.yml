@@ -1,5 +1,11 @@
-- name: Upload build artifact
-  uses: ./.github/actions/upload-artifact
-  with:
-    name: build-output
-    path: dist/
+name: Echo Message Pipeline
+
+on:
+  workflow_dispatch:  # Allows you to trigger it manually from the Actions tab
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say a message
+        run: echo "👋 Hello from GitHub Actions!"
